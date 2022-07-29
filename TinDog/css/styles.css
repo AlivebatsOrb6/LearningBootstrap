@@ -1,0 +1,18 @@
+#title {
+    background-color: #ff4c68;
+}
+
+h1 {
+    font-family: 'Montserrat';
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: 900;
+}
+
+.navbar-brand {
+    margin-left: 16px;
+}
+
+.container-fluid {
+    padding: 3% 15%;
+}
