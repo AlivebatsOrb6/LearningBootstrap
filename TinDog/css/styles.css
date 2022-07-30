@@ -13,6 +13,21 @@ h1 {
     font-weight: 900;
 }
 
+h2 {
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+p {
+    color: #8f8f8f;
+}
+
 .navbar-brand {
     font-size: 2.75rem;
     font-family: 'ubuntu';
@@ -40,24 +55,33 @@ h1 {
 }
 
 .title-img {
-    width: 60%;
+    width: 20rem;
     transform: rotate(25deg);
+    position: absolute;
+    margin-left: 100px;
 }
+
+@media (max-width: 1028px) {
+    .title-img {
+        transform: rotate(0);
+        position: static;
+        margin: 0;
+    }
+    #title {
+        text-align: center;
+    }
+}
+
 
 
 /* features */
 #features {
     text-align: center;
+    background-color: white;
+    position: relative;
+    z-index: 1;
 }
 
-#features h3 {
-    font-weight: bold;
-    font-size: 1.5rem;
-}
-
-#features p {
-    color: #8f8f8f;
-}
 
 #features i {
     margin: 15px;
@@ -71,4 +95,75 @@ h1 {
 
 .feature-box {
     padding: 8%;
+}
+
+/* Testimonials */
+.reviews {
+    background: linear-gradient(200deg, rgba(255,76,104,1) 0%, rgba(239,129,114,1) 100%);
+}
+
+#testimonials {
+
+    text-align: center;
+    color: #fff;
+}
+
+.testimonial-img {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+#press {
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+#press img {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+.reviews .carousel-item {
+    padding: 7% 15%;
+}
+
+/* pricing */ 
+
+#pricing {
+    padding: 100px;
+    text-align: center;
+}
+
+#pricing .col-lg-4 {
+    padding: 3% 2%;
+}
+
+/* Call to action */
+
+#cta {
+    text-align: center;
+    background-color: #ef8172;
+    margin-bottom: 6%;
+}
+
+#cta h3 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    padding: 100px 0;
+    color: white;
+}
+
+#cta .download-btn {
+    margin: 4% 2% 5% 0;
+}
+
+/* Footer */
+
+#footer {
+    text-align: center;
+}
+
+#footer i {
+    margin: 15px;
 }
